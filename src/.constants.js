@@ -17,13 +17,13 @@ module.exports = Object.freeze({
   }, // not required
   DOWNLOAD_NOTIFY_TARGET: {  // Information about the web service to notify on download completion. not required
     enabled: false,   // Set this to true to use the notify functionality
-    host: 'https://ariamirrorkerala.herokuapp.com/',
+    host: 'https://ariamirrorbotkerala.herokuapp.com/',
     port: 80,
     path: '/botNotify'
   },
     COMMANDS_USE_BOT_NAME: {
       ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command.
-      NAME: "" //Enter your Bot Username here if above is set to true.
+      NAME: "@Trollmusicbot" //Enter your Bot Username here if above is set to true.
     }
 });
 
