@@ -1,30 +1,28 @@
 module.exports = Object.freeze({
-  TOKEN: '946438606:AAFEI_QUW6qTGjQeI1oNxbGiPIID18sXuM8', //required
-  ARIA_SECRET: 'bhadoo', //change as per needs.
-  ARIA_DOWNLOAD_LOCATION: '/app/downloads)', //-leave as it is
-  INDEX_DOMAIN: 'https://workers.workers.dev/', // replace with your index domain. use https://github.com/ParveenBhadooOfficial/go-drive
-  ARIA_DOWNLOAD_LOCATION_ROOT: '/', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION -leave as it is
-  ARIA_FILTERED_DOMAINS: [], // Prevent downloading from URLs containing these substrings -leave as it is
-  ARIA_FILTERED_FILENAMES: [], // Files/top level directories with these substrings in the filename won't be downloaded -leave as it is
-  ARIA_PORT: 8210, // Port for aria2c RPC server, if you change this here, make sure to update aria.sh as well -leave as it is
-  GDRIVE_PARENT_DIR_ID:  '1A3K2M4qSHmA4VZpOMUWWHweDyJBLAcgF', // for directorty eg. https://drive.google.com/drive/folders/1p7pHhSh2yboWePmo53DnVr3xkAYiojP9 use 1p7pHhSh2yboWePmo53DnVr3xkAYiojP9
-  SUDO_USERS: [646146866],	// Telegram user IDs. These users can use the bot in any chat. required, get it using https://t.me/YourTGid_Bot
-  AUTHORIZED_CHATS: [-1001350343006],	// Telegram chat IDs. Anyone in these chats can use the bot. Add https://t.me/YourTGid_Bot to Group and click /id
-  STATUS_UPDATE_INTERVAL_MS: 12000, // A smaller number will update faster, but might cause rate limiting -leave as it is
+  TOKEN: '910781384:AAHcfvhhTNtHl1g2B1GfNUzQjgwb0-YT8CI',
+  ARIA_SECRET: '0xg0d',
+  ARIA_DOWNLOAD_LOCATION: '/app/downloads',
+  ARIA_DOWNLOAD_LOCATION_ROOT: '/', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION
+  ARIA_FILTERED_DOMAINS: ['yts', 'YTS', 'cruzing.xyz', 'eztv.ag', 'YIFY'], // Prevent downloading from URLs containing these substrings
+  ARIA_FILTERED_FILENAMES: ['YIFY'], // Files/top level directories with these substrings in the filename won't be downloaded
+  ARIA_PORT: 8210, // Port for aria2c RPC server, if you change this here, make sure to update aria.sh as well
+  GDRIVE_PARENT_DIR_ID: '1sSM7DGBJkSSDpM7fYYA_TuRWBgqol6Y9',
+  SUDO_USERS: [563857796],	// Telegram user IDs. These users can use the bot in any chat.
+  AUTHORIZED_CHATS: [-452935028],	// Telegram chat IDs. Anyone in these chats can use the bot.
+  STATUS_UPDATE_INTERVAL_MS: 12000, // A smaller number will update faster, but might cause rate limiting
   DRIVE_FILE_PRIVATE: {
     ENABLED: false,
-    EMAILS: ['1@gmail.com', '2@gmail.com']
-  }, // not required
-  DOWNLOAD_NOTIFY_TARGET: {  // Information about the web service to notify on download completion. not required
+    EMAILS: ['someMail@gmail.com', 'someOtherMail@gmail.com']
+  },
+  DOWNLOAD_NOTIFY_TARGET: {  // Information about the web service to notify on download completion.
     enabled: false,   // Set this to true to use the notify functionality
-    host: 'https://ariamirrorbotkerala.herokuapp.com/',
+    host: 'hostname.domain',
     port: 80,
     path: '/botNotify'
   },
-    COMMANDS_USE_BOT_NAME: {
-      ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command.
-      NAME: "@Trollmusicbot" //Enter your Bot Username here if above is set to true.
-    }
+  COMMANDS_USE_BOT_NAME: {
+    ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command
+    NAME: "@nameOf_bot"
+  },
+  IS_TEAM_DRIVE: false
 });
-
-// already deployed in @BhadooCloud in Telegram.
